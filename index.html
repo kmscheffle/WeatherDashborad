@@ -14,15 +14,21 @@
 <body>
     <header>
         <h1>Weather Dashboard</h1>
-        <input type="text" id="cityInput" placeholder="Enter city name">
-        <button id="searchBtn">Search</button>
+        <form id="search-form">
+            <input type="text" id="city-input" placeholder="Enter city name">
+            <button type="submit">Search</button>
+        </form>
     </header>
     <main>
-        <div id="weatherInfo">
-            <!-- Weather information will be displayed here -->
+        <div id="city-display"></div>
+        <div id="forecast-display">
+            <!-- Forecast information will be dynamically added here -->
+        </div>
+        <div id="current-weather">
+            <!-- Current weather information will be dynamically added here -->
         </div>
     </main>
-    <script src="assets/script.js"></script> 
+    <script src="assets/script.js"></script>
 </body>
 
 </html>
